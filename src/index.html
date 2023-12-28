@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maze Path Visualization</title>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <style>
+            canvas {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="lg">
+            <button onclick="findPath()">Path Finding</button>
+            <button onclick="clearPath()">Clear Path</button> <br /><br />
+            <span
+                >Starting Point: <span class="p-5 bg-red-100">{2,0}</span></span
+            >
+            <br />
+            <span>Exit Point: <span class="p-5 bg-red-100">{2,0}</span></span>
+
+            <hr />
+            <canvas id="mazeCanvas" width="500" height="300"></canvas>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
